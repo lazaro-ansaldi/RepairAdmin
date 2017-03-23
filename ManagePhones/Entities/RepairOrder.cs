@@ -2,7 +2,7 @@
 
 namespace Entities
 {
-    class RepairOrder
+    public class RepairOrder
     {
         private int _nroOrden;
         private DateTime _fechaIngreso;

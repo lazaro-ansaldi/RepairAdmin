@@ -1,0 +1,9 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Logic.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Logic.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Entities.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Entities.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\Logic.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\Logic.pdb

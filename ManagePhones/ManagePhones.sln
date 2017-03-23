@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiDesktop", "UiDesktop\UiDesktop.csproj", "{7DF723E2-8B46-4BBD-8ACE-692B9ADF9891}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesktop", "UiDesktop\UIDesktop.csproj", "{7DF723E2-8B46-4BBD-8ACE-692B9ADF9891}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{FFCBE89C-BE90-4852-9D35-7718621B0AC5}"
 EndProject

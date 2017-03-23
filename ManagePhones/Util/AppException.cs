@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Util
 {
-    class AppException : Exception
+    public class AppException : Exception
     {
         private Exception _ex;
 

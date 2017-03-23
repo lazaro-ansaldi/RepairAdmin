@@ -1,7 +1,7 @@
 ﻿
 namespace Entities
 {
-    class Modelo
+    public class Modelo
     {
         private int _id;
         private string _descripcion;

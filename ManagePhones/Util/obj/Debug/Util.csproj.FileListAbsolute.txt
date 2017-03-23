@@ -1,0 +1,5 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\Util.pdb

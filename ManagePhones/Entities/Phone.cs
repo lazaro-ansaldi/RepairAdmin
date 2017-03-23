@@ -2,7 +2,7 @@
 
 namespace Entities
 {
-    class Phone
+    public class Phone
     {
         private string _imei;
         private string _descripcion;
