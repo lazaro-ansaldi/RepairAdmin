@@ -57,16 +57,18 @@
     <Compile Include="Repositories\ModelRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\UiDesktop\App.config">
-      <Link>App.config</Link>
-    </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{ffcbe89c-be90-4852-9d35-7718621b0ac5}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{1352958b-661f-485c-81b9-ba211d82901a}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

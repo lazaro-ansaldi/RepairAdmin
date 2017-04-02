@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Entities;
+using Util;
 using System.Data.SqlClient;
 
 namespace DataAccess.Repositories
 {
-    class GenericRepository : IRepository
+    public class GenericRepository : IRepository
     {
         protected PhonesContext _context;
 
@@ -40,11 +41,11 @@ namespace DataAccess.Repositories
             }
             catch(SqlException sqlex)
             {
-
+                throw new AppException("Ocurrió un error al guardar los cambios en la base de datos.", "Error", sqlex);
             }
             catch(Exception ex)
             {
-
+                throw new AppException("Se produjo un error no esperado al intentar guardar los cambios en la base de datos.", "Fatal", ex);
             }
         }
     }

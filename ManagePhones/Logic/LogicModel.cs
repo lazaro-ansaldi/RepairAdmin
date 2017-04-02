@@ -1,17 +1,27 @@
 ﻿using Entities.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Util;
+using DataAccess.Repositories;
 
 namespace Logic
 {
     public class LogicModel
     {
-        public List<Modelo> GetAll()
+        private ModelRepository _modelRepository;
+        public IEnumerable<Modelo> GetAll()
         {
-            throw new NotImplementedException();
+            _modelRepository = new ModelRepository();
+            IEnumerable<Modelo> listModels;
+            try
+            {
+                listModels = _modelRepository.GetAll();
+            }
+            catch(AppException appex)
+            {
+                throw appex;
+            }
+            return listModels;
         }
 
         public void AddNewModel(Modelo model)

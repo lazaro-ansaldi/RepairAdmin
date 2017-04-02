@@ -1,4 +1,5 @@
 ﻿using System;
+using Util;
 using System.Collections.Generic;
 using System.Linq;
 using Entities.Entidades;
@@ -7,7 +8,7 @@ using System.Data.Entity;
 
 namespace DataAccess.Repositories
 {
-    class ModelRepository : GenericRepository
+    public class ModelRepository : GenericRepository
     {
 
         public new IEnumerable<Modelo> GetAll()
@@ -16,15 +17,20 @@ namespace DataAccess.Repositories
             List<Modelo> listModels = new List<Modelo>();
             try
             {
-                 listModels =_context.Modelos.ToList();
+                // Recupero todos los modelos con el objeto marca relacionado //
+                 listModels =_context.Modelos.Include(m => m.Marca).ToList();
+            }
+            catch(AppException appex)
+            {
+                throw appex;
             }
             catch(SqlException sqlex)
             {
-
+                throw new AppException("Se produjo un error al consultar la tabla de modelos.", "Error", sqlex);
             }
             catch(Exception ex)
             {
-
+                throw new AppException("Ocurrió un error no esperado al consultar los modelos.", "Fatal", ex);
             }
             finally
             {
@@ -43,11 +49,11 @@ namespace DataAccess.Repositories
             }
             catch(SqlException sqlex)
             {
-
+                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
             }
             catch(Exception ex)
             {
-
+                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
             }
             finally
             {
@@ -65,11 +71,11 @@ namespace DataAccess.Repositories
             }
             catch(SqlException sqlex)
             {
-
+                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
             }
             catch(Exception ex)
             {
-
+                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
             }
             finally
             {
@@ -88,11 +94,11 @@ namespace DataAccess.Repositories
             }
             catch(SqlException sqlex)
             {
-
+                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
             }
             catch(Exception ex)
             {
-
+                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
             }
             finally
             {

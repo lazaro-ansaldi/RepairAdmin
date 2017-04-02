@@ -1,5 +1,8 @@
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\Entities.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\Entities.pdb
-C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\obj\Debug\Entities.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\obj\Debug\Entities.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.xml

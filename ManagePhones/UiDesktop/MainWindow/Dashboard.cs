@@ -21,14 +21,13 @@ namespace UiDesktop
 
         private void mtModelos_Click(object sender, EventArgs e)
         {
-            ManageModels manageModels = new ManageModels();
-            if (!Main.Instancia.Panel.Controls.ContainsKey("ManageModels"))
+            if (!Main.Instancia.Panel.Controls.ContainsKey(ManageModels.Instancia.Key))
             {
-                manageModels.Dock = DockStyle.Fill;
-                Main.Instancia.Panel.Controls.Add(manageModels);               
+                ManageModels.Instancia.Dock = DockStyle.Fill;
+                Main.Instancia.Panel.Controls.Add(ManageModels.Instancia);               
             }
-            manageModels.LoadData();
-            Main.Instancia.Panel.Controls["ManageModels"].BringToFront();
+            ManageModels.Instancia.LoadData();
+            Main.Instancia.Panel.Controls[ManageModels.Instancia.Key].BringToFront();
             Main.Instancia.LinkBack.Visible = true;
         }
     }

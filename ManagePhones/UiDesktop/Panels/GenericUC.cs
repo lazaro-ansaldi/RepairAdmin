@@ -24,5 +24,10 @@ namespace UiDesktop.Panels
         {
             MetroMessageBox.Show(this, message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        protected virtual void linkEdit_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

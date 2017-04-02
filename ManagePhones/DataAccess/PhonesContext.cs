@@ -1,11 +1,10 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Entities.Entidades;
-using Entities;
 
 namespace DataAccess
 {
-    class PhonesContext : DbContext
+    public class PhonesContext : DbContext
     {
         private const string CONTEXTNAME = "DefaultConnection";
 

@@ -7,6 +7,8 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.pdb
-C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\DataAccess.dll.config
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\Entities.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\Entities.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\DataAccess.dll.config

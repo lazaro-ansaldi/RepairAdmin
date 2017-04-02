@@ -19,3 +19,11 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.pdb
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.ManageModels.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.GenericUC.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\DataAccess.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\DataAccess.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.GenericABMWindows.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.ABMModel.resources
