@@ -1,0 +1,15 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Database.dll.config
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Database.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Database.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Entities.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\JetEntityFrameworkProvider.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Entities.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\obj\Debug\Database.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Database\obj\Debug\Database.pdb

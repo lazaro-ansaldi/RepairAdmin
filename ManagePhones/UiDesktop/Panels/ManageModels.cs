@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Controls;
 using Logic;
-using Entities;
+using Entities.Entidades;
 using Util;
 
 namespace UiDesktop.Panels

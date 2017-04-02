@@ -18,5 +18,4 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.exe
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.pdb
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.ManageModels.resources
-C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Messages.InfoMessage.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.GenericUC.resources
