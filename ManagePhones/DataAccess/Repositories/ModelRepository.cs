@@ -1,109 +1,58 @@
 ﻿using System;
-using Util;
 using System.Collections.Generic;
 using System.Linq;
 using Entities.Entidades;
-using System.Data.SqlClient;
 using System.Data.Entity;
+using DataAccess.Repositories.Interfaces;
+using DataAccess.Context;
 
 namespace DataAccess.Repositories
 {
-    public class ModelRepository : GenericRepository
+    public class ModelRepository : IBaseRepository<Modelo>
     {
+        private PhonesContext _context;
 
-        public new IEnumerable<Modelo> GetAll()
+        public IEnumerable<Modelo> GetAll()
         {
-            _context = new PhonesContext();
-            List<Modelo> listModels = new List<Modelo>();
-            try
+            using (_context = new PhonesContext())
             {
                 // Recupero todos los modelos con el objeto marca relacionado //
-                 listModels =_context.Modelos.Include(m => m.Marca).ToList();
+                return _context.Modelos.Include(m => m.Marca).ToList();
             }
-            catch(AppException appex)
-            {
-                throw appex;
-            }
-            catch(SqlException sqlex)
-            {
-                throw new AppException("Se produjo un error al consultar la tabla de modelos.", "Error", sqlex);
-            }
-            catch(Exception ex)
-            {
-                throw new AppException("Ocurrió un error no esperado al consultar los modelos.", "Fatal", ex);
-            }
-            finally
-            {
-                _context = null;
-            }
-            return listModels;
         }
 
         public void Insert(Modelo model)
         {
-            _context = new PhonesContext();
-            try
+            using (_context = new PhonesContext())
             {
                 _context.Entry(model).State = EntityState.Added;
-                base.SaveChanges();
-            }
-            catch(SqlException sqlex)
-            {
-                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
-            }
-            catch(Exception ex)
-            {
-                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
-            }
-            finally
-            {
-                _context = null;
+                _context.SaveChanges();
             }
         }
 
         public void Update(Modelo model)
         {
-            _context = new PhonesContext();
-            try
+            using (_context = new PhonesContext())
             {
+                _context.Entry(model.Marca).State = EntityState.Modified;
                 _context.Entry(model).State = EntityState.Modified;
-                base.SaveChanges();
-            }
-            catch(SqlException sqlex)
-            {
-                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
-            }
-            catch(Exception ex)
-            {
-                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
-            }
-            finally
-            {
-                _context = null;
+                _context.SaveChanges();
             }
         }
 
         public void Delete(Modelo model)
         {
-            _context = new PhonesContext();
-            try
+           using(_context = new PhonesContext())
             {
                 model = _context.Modelos.Find(model.Id);
                 _context.Entry(model).State = EntityState.Deleted;
-                base.SaveChanges();
+                _context.SaveChanges();
             }
-            catch(SqlException sqlex)
-            {
-                throw new AppException("Se produjo un error al actualizar la tabla de modelos.", "Error", sqlex);
-            }
-            catch(Exception ex)
-            {
-                throw new AppException("Ocurrió un error no esperado al intentar actualizar le modelo.", "Fatal", ex);
-            }
-            finally
-            {
-                _context = null;
-            }
+        }
+
+        public Modelo FindOneById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

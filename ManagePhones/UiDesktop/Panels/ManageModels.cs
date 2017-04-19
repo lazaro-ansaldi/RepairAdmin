@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic;
 using Entities.Entidades;
-using Util;
 using UiDesktop.ABMWindows;
+using Util.Exceptions;
+using Logic.Logic;
 
 namespace UiDesktop.Panels
 {
@@ -17,6 +17,7 @@ namespace UiDesktop.Panels
                 return KEYNAME;
             }
         }
+
         #region Singleton
         private static ManageModels _instancia;
 
@@ -54,9 +55,9 @@ namespace UiDesktop.Panels
                     gridModelos.Rows.Add(m.Id, m.Marca.Id, m.Marca.Name, m.Nombre, m.Descripcion);
                 }
             }
-            catch(AppException appex)
+            catch(LoggedException logex)
             {
-                base.ShowError(appex.Message, "Cargar Modelos");
+                base.ShowError(logex.Message, "Cargar Modelos");
             }
             catch(Exception ex)
             {

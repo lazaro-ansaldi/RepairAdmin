@@ -62,13 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ABMWindows\ABMModel.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="ABMWindows\ABMModel.Designer.cs">
       <DependentUpon>ABMModel.cs</DependentUpon>
     </Compile>
     <Compile Include="ABMWindows\GenericABMWindows.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="ABMWindows\GenericABMWindows.Designer.cs">
       <DependentUpon>GenericABMWindows.cs</DependentUpon>

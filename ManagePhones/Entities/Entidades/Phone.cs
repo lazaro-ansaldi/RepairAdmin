@@ -2,7 +2,7 @@
 
 namespace Entities.Entidades
 {
-    public class Phone : IEntity
+    public class Phone : Entity
     {
         #region Constructors
         public Phone()
@@ -16,7 +16,6 @@ namespace Entities.Entidades
         public string Imei { get; set; }
         public string Descripcion { get; set; }
         public Modelo Modelo { get; set; }
-        public int Id { get; set;}
         #endregion
     }
 }

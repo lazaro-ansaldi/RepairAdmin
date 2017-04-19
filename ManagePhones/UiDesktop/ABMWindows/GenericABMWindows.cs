@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities.Entidades;
+using MetroFramework;
+using MetroFramework.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace UiDesktop.ABMWindows
 {
-    public partial class GenericABMWindows : UserControl
+    public partial class GenericABMWindows : MetroForm
     {
+        protected Entity _currentEntity;
+
         public GenericABMWindows()
         {
             InitializeComponent();
@@ -22,9 +20,23 @@ namespace UiDesktop.ABMWindows
             this.Dispose();
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveChanges();
+        }
+
         protected virtual void SaveChanges()
         {
 
+        }
+        protected void ShowInfo(string message, string title)
+        {
+            MetroMessageBox.Show(this, message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        protected void ShowError(string message, string title)
+        {
+            MetroMessageBox.Show(this, message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

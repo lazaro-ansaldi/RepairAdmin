@@ -6,3 +6,4 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache

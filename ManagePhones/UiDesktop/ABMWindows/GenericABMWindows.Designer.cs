@@ -2,15 +2,15 @@
 {
     partial class GenericABMWindows
     {
-        /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -34,18 +34,19 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(325, 302);
+            this.btnSave.Location = new System.Drawing.Point(367, 272);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(93, 31);
+            this.btnSave.Size = new System.Drawing.Size(94, 32);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseSelectable = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(42, 302);
+            this.btnCancel.Location = new System.Drawing.Point(51, 272);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(93, 31);
+            this.btnCancel.Size = new System.Drawing.Size(94, 32);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseSelectable = true;
@@ -55,17 +56,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(511, 327);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Name = "GenericABMWindows";
-            this.Size = new System.Drawing.Size(474, 353);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        protected MetroFramework.Controls.MetroButton btnSave;
-        protected MetroFramework.Controls.MetroButton btnCancel;
+        private MetroFramework.Controls.MetroButton btnSave;
+        private MetroFramework.Controls.MetroButton btnCancel;
     }
 }

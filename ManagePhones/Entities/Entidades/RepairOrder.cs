@@ -2,7 +2,7 @@
 
 namespace Entities.Entidades
 {
-    public class RepairOrder : IEntity
+    public class RepairOrder : Entity
     {
         #region Properties
         public bool IsSd { get; set; }
@@ -10,7 +10,6 @@ namespace Entities.Entidades
         public DateTime? FechaEgreso { get; set; }
         public DateTime FechaIngreso { get; set; }
         public int NroOrden { get; set; }
-        public int Id { get; set; }
         #endregion
     }
 }

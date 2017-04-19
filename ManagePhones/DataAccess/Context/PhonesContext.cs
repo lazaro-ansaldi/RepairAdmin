@@ -2,7 +2,7 @@
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Entities.Entidades;
 
-namespace DataAccess
+namespace DataAccess.Context
 {
     public class PhonesContext : DbContext
     {
@@ -14,6 +14,7 @@ namespace DataAccess
         public DbSet<Modelo> Modelos { get; set; }
         public DbSet<Phone> Phones { get; set; }
         public DbSet<RepairOrder> RepairOrders { get; set; }
+        public DbSet<Marca> Marcas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

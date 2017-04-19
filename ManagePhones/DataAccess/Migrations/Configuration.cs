@@ -2,14 +2,15 @@ namespace DataAccess.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DataAccess.PhonesContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataAccess.Context.PhonesContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(DataAccess.PhonesContext context)
+        protected override void Seed(DataAccess.Context.PhonesContext context)
         {
             //  This method will be called after migrating to the latest version.
 

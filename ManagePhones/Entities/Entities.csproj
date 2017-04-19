@@ -44,8 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Entity.cs" />
     <Compile Include="Entidades\Marca.cs" />
-    <Compile Include="IEntity.cs" />
     <Compile Include="Entidades\Modelo.cs" />
     <Compile Include="Entidades\Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
