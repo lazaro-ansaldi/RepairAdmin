@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace Entities.Entidades
 {
     public class Marca : Entity

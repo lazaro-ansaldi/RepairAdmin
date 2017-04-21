@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.mtClientes = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.mtModelos = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
-            // metroTile1
+            // mtClientes
             // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(22, 21);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(177, 95);
-            this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "Reparaciones pendientes";
-            this.metroTile1.UseSelectable = true;
+            this.mtClientes.ActiveControl = null;
+            this.mtClientes.Location = new System.Drawing.Point(22, 21);
+            this.mtClientes.Name = "mtClientes";
+            this.mtClientes.Size = new System.Drawing.Size(177, 95);
+            this.mtClientes.TabIndex = 0;
+            this.mtClientes.Text = "Administrar Clientes";
+            this.mtClientes.UseSelectable = true;
+            this.mtClientes.Click += new System.EventHandler(this.mtClientes_Click);
             // 
             // metroTile2
             // 
@@ -70,7 +71,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mtModelos);
             this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile1);
+            this.Controls.Add(this.mtClientes);
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(675, 400);
             this.ResumeLayout(false);
@@ -79,7 +80,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile mtClientes;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile mtModelos;
     }

@@ -72,6 +72,16 @@ namespace UiDesktop.Panels
             abmWin.MapToForm(currentModel);
             abmWin.Show();
         }
+
+        protected override void linkNew_Click(object sender, System.EventArgs e)
+        {
+            currentModel = new Modelo();
+            currentModel.Id = 0;
+            ABMModel abmWin = new ABMModel();
+            abmWin.MapToForm(currentModel);
+            abmWin.Show();
+        }
+
         protected void MapFromGrid()
         {
             currentModel = new Modelo();

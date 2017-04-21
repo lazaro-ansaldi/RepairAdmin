@@ -91,6 +91,12 @@
     <Compile Include="Panels\GenericUC.Designer.cs">
       <DependentUpon>GenericUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\ManageClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ManageClients.Designer.cs">
+      <DependentUpon>ManageClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\ManageModels.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\GenericUC.resx">
       <DependentUpon>GenericUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ManageClients.resx">
+      <DependentUpon>ManageClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\ManageModels.resx">
       <DependentUpon>ManageModels.cs</DependentUpon>

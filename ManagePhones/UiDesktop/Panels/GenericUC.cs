@@ -29,5 +29,10 @@ namespace UiDesktop.Panels
         {
 
         }
+
+        protected virtual void linkNew_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,9 +53,14 @@
     <Compile Include="Migrations\201704030314123_Reset.Designer.cs">
       <DependentUpon>201704030314123_Reset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704200310352_20170420.cs" />
+    <Compile Include="Migrations\201704200310352_20170420.Designer.cs">
+      <DependentUpon>201704200310352_20170420.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Context\PhonesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
     <Compile Include="Repositories\Interfaces\IBaseRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ModelRepository.cs" />
@@ -77,6 +82,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201704030314123_Reset.resx">
       <DependentUpon>201704030314123_Reset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704200310352_20170420.resx">
+      <DependentUpon>201704200310352_20170420.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

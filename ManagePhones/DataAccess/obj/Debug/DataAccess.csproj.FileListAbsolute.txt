@@ -14,3 +14,4 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\DataAccess.dll.config
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.Migrations.Reset.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.Migrations._20170420.resources

@@ -25,6 +25,7 @@ namespace DataAccess.Repositories
         {
             using (_context = new PhonesContext())
             {
+                _context.Entry(model.Marca).State = EntityState.Unchanged;
                 _context.Entry(model).State = EntityState.Added;
                 _context.SaveChanges();
             }
@@ -34,8 +35,8 @@ namespace DataAccess.Repositories
         {
             using (_context = new PhonesContext())
             {
-                _context.Entry(model.Marca).State = EntityState.Modified;
                 _context.Entry(model).State = EntityState.Modified;
+                _context.Entry(model.Marca).State = EntityState.Unchanged;            
                 _context.SaveChanges();
             }
         }

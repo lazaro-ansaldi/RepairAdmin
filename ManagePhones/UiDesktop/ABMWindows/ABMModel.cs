@@ -58,7 +58,8 @@ namespace UiDesktop.ABMWindows
                 {
                     logicModel.AddNewModel(MapFromForm());
                     base.ShowInfo("Modelo agregado correctamente.", "Modificar Modelo.");
-                }               
+                }
+                this.Close();               
             }
             catch(LoggedException logex)
             {

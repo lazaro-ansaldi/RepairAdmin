@@ -88,6 +88,7 @@
             this.linkNew.UseCustomBackColor = true;
             this.linkNew.UseSelectable = true;
             this.linkNew.UseStyleColors = true;
+            this.linkNew.Click += new System.EventHandler(this.linkNew_Click);
             // 
             // GenericUC
             // 

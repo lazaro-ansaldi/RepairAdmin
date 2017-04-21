@@ -27,3 +27,4 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.GenericABMWindows.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.ABMModel.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.ManageClients.resources
