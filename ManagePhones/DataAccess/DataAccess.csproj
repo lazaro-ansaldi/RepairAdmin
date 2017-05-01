@@ -64,6 +64,7 @@
     <Compile Include="Repositories\Interfaces\IBaseRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ModelRepository.cs" />
+    <Compile Include="Repositories\PhoneRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">

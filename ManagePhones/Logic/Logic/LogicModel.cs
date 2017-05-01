@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DataAccess.Repositories;
 using System.Data.SqlClient;
 using Util.Exceptions;
+using System.Threading.Tasks;
 
 namespace Logic.Logic
 {
@@ -11,12 +12,12 @@ namespace Logic.Logic
     {
         private ModelRepository _modelRepository;
 
-        public IEnumerable<Modelo> GetAll()
+        public async Task<IEnumerable<Modelo>> GetAll()
         {
             _modelRepository = new ModelRepository();
             try
             {
-                return _modelRepository.GetAll();
+                return await _modelRepository.GetAll();
             }
             catch(SqlException sqlex)
             {
@@ -28,12 +29,12 @@ namespace Logic.Logic
             }
         }
 
-        public void AddNewModel(Modelo model)
+        public async Task AddNewModel(Modelo model)
         {
             _modelRepository = new ModelRepository();
             try
             {
-                _modelRepository.Insert(model);
+                await _modelRepository.Insert(model);
             }
             catch (SqlException sqlex)
             {
@@ -55,12 +56,12 @@ namespace Logic.Logic
             throw new NotImplementedException();
         }
 
-        public void UpdateModel(Modelo model)
+        public async Task UpdateModel(Modelo model)
         {
             _modelRepository = new ModelRepository();
             try
             {
-                _modelRepository.Update(model);
+                await _modelRepository.Update(model);
             }
             catch (SqlException sqlex)
             {

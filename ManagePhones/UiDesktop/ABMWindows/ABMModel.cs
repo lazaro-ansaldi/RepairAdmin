@@ -1,6 +1,7 @@
 ﻿
 using Entities.Entidades;
 using Logic.Logic;
+using System.Threading.Tasks;
 using Util.Exceptions;
 
 namespace UiDesktop.ABMWindows
@@ -40,7 +41,7 @@ namespace UiDesktop.ABMWindows
             return m;   
         }
 
-        protected override void SaveChanges()
+        protected override async Task SaveChanges()
         {
             if (!Validar())
             {
@@ -51,12 +52,12 @@ namespace UiDesktop.ABMWindows
             {
                 if (_currentEntity.Id > 0)
                 {
-                    logicModel.UpdateModel(MapFromForm());
+                    await logicModel.UpdateModel(MapFromForm());
                     base.ShowInfo("Modelo modificado correctamente.", "Modificar Modelo.");
                 }
                 else
                 {
-                    logicModel.AddNewModel(MapFromForm());
+                    await logicModel.AddNewModel(MapFromForm());
                     base.ShowInfo("Modelo agregado correctamente.", "Modificar Modelo.");
                 }
                 this.Close();               

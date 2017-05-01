@@ -1,17 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DataAccess.Repositories.Interfaces
 {
     interface IBaseRepository<T>
     {
-        IEnumerable<T> GetAll();
+        Task<IEnumerable<T>> GetAll();
 
-        void Insert(T entity);
+        Task Insert(T entity);
 
-        void Delete(T entity);
+        Task Delete(T entity);
 
-        void Update(T entity);
+        Task Update(T entity);
 
-        T FindOneById(int id);
+        Task<T> FindOneById(int id);
     }
 }

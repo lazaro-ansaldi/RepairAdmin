@@ -4,6 +4,7 @@ using Entities.Entidades;
 using Util.Exceptions;
 using System;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace Logic.Logic
 {
@@ -11,12 +12,12 @@ namespace Logic.Logic
     {
         private MarcaRepository _repository;
 
-        public IEnumerable<Marca> GetMarcas()
+        public async Task<IEnumerable<Marca>> GetMarcas()
         {
             _repository = new MarcaRepository();
             try
             {
-                return _repository.GetAll();
+                return await _repository.GetAll();
             }
             catch(SqlException sqlex)
             {

@@ -3,6 +3,7 @@ using Entities.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 using Util.Exceptions;
 
 namespace Logic.Logic
@@ -11,12 +12,12 @@ namespace Logic.Logic
     {
         private ClientRepository _clientRepository;
 
-        public void InsertNewCliente(Cliente cliente)
+        public async Task InsertNewCliente(Cliente cliente)
         {
             _clientRepository = new ClientRepository();
             try
             {
-                _clientRepository.Insert(cliente);
+                await _clientRepository.Insert(cliente);
             }
             catch(SqlException sqlex)
             {
@@ -28,12 +29,12 @@ namespace Logic.Logic
             }
         }
 
-        public void UpdateCliente(Cliente cliente)
+        public async Task UpdateCliente(Cliente cliente)
         {
             _clientRepository = new ClientRepository();
             try
             {
-                _clientRepository.Update(cliente);
+                await _clientRepository.Update(cliente);
             }
             catch (SqlException sqlex)
             {
@@ -45,12 +46,12 @@ namespace Logic.Logic
             }
         }
 
-        public IEnumerable<Cliente> GetAll()
+        public async Task<IEnumerable<Cliente>> GetAll()
         {
             _clientRepository = new ClientRepository();
             try
             {
-                return _clientRepository.GetAll();
+                return await _clientRepository.GetAll();
             }
             catch (SqlException sqlex)
             {

@@ -2,6 +2,7 @@
 using MetroFramework;
 using MetroFramework.Forms;
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UiDesktop.ABMWindows
@@ -25,10 +26,11 @@ namespace UiDesktop.ABMWindows
             SaveChanges();
         }
 
-        protected virtual void SaveChanges()
+        protected virtual Task SaveChanges()
         {
-
+            throw new NotImplementedException();
         }
+
         protected void ShowInfo(string message, string title)
         {
             MetroMessageBox.Show(this, message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);

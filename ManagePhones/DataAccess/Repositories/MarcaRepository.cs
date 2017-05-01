@@ -4,6 +4,8 @@ using System.Linq;
 using Entities.Entidades;
 using DataAccess.Repositories.Interfaces;
 using DataAccess.Context;
+using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace DataAccess.Repositories
 {
@@ -11,30 +13,30 @@ namespace DataAccess.Repositories
     {
         private PhonesContext _context;
 
-        public void Delete(Marca entity)
+        public Task Delete(Marca entity)
         {
             throw new NotImplementedException();
         }
 
-        public Marca FindOneById(int id)
+        public async Task<Marca> FindOneById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Marca> GetAll()
+        public async Task<IEnumerable<Marca>> GetAll()
         {
             using (_context = new PhonesContext())
             {
-                return _context.Marcas.ToList();
+                return await _context.Marcas.ToListAsync();
             }                      
         }
 
-        public void Insert(Marca entity)
+        public async Task Insert(Marca entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Marca entity)
+        public async Task Update(Marca entity)
         {
             throw new NotImplementedException();
         }

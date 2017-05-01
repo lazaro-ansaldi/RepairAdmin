@@ -46,13 +46,13 @@ namespace UiDesktop.Panels
 
         private LogicClient _logicClient;
 
-        public override void LoadData()
+        public async override void LoadData()
         {
             _logicClient = new LogicClient();
             gridClientes.Rows.Clear();
             try
             {
-                IEnumerable<Cliente> listClientes = _logicClient.GetAll();
+                IEnumerable<Cliente> listClientes = await _logicClient.GetAll();
                 foreach (Cliente c in listClientes)
                 {
                     // IdCliente | Apellido | Nombre //

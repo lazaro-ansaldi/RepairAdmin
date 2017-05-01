@@ -42,13 +42,13 @@ namespace UiDesktop.Panels
         private LogicModel logicModel;
         private Modelo currentModel;
 
-        public override void LoadData()
+        public async override void LoadData()
         {
             logicModel = new LogicModel();
             gridModelos.Rows.Clear();
             try
             {
-                IEnumerable<Modelo> listModelos = logicModel.GetAll();
+                IEnumerable<Modelo> listModelos = await logicModel.GetAll();
                 foreach(Modelo m in listModelos)
                 {
                     // IdModelo | IdMarca | Marca | Nombre | Descripcion //

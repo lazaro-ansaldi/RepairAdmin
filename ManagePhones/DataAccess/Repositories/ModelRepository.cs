@@ -5,6 +5,7 @@ using Entities.Entidades;
 using System.Data.Entity;
 using DataAccess.Repositories.Interfaces;
 using DataAccess.Context;
+using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
@@ -12,46 +13,46 @@ namespace DataAccess.Repositories
     {
         private PhonesContext _context;
 
-        public IEnumerable<Modelo> GetAll()
+        public async Task<IEnumerable<Modelo>> GetAll()
         {
             using (_context = new PhonesContext())
             {
                 // Recupero todos los modelos con el objeto marca relacionado //
-                return _context.Modelos.Include(m => m.Marca).ToList();
+                return await _context.Modelos.Include(m => m.Marca).ToListAsync();
             }
         }
 
-        public void Insert(Modelo model)
+        public async Task Insert(Modelo model)
         {
             using (_context = new PhonesContext())
             {
                 _context.Entry(model.Marca).State = EntityState.Unchanged;
                 _context.Entry(model).State = EntityState.Added;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
 
-        public void Update(Modelo model)
+        public async Task Update(Modelo model)
         {
             using (_context = new PhonesContext())
             {
                 _context.Entry(model).State = EntityState.Modified;
                 _context.Entry(model.Marca).State = EntityState.Unchanged;            
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
 
-        public void Delete(Modelo model)
+        public async Task Delete(Modelo model)
         {
            using(_context = new PhonesContext())
             {
                 model = _context.Modelos.Find(model.Id);
                 _context.Entry(model).State = EntityState.Deleted;
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
 
-        public Modelo FindOneById(int id)
+        public async Task<Modelo> FindOneById(int id)
         {
             throw new NotImplementedException();
         }

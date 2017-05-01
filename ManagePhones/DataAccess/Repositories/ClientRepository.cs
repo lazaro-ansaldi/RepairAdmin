@@ -4,6 +4,8 @@ using Entities.Entidades;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System;
+using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
@@ -11,48 +13,29 @@ namespace DataAccess.Repositories
     {
         private PhonesContext _context;
 
-        public void Delete(Cliente entity)
+        public async Task Delete(Cliente entity)
         {
-            using(_context = new PhonesContext())
-            {
-                _context.Entry(entity).State = EntityState.Deleted;
-                _context.SaveChanges();
-            }
+            throw new NotImplementedException();
         }
 
-        public Cliente FindOneById(int id)
+        public async Task<Cliente> FindOneById(int id)
         {
-            using (_context = new PhonesContext())
-            {
-                var cliente = (from c in _context.Clientes where c.Id == id select c).SingleOrDefault();
-                return cliente;
-            }          
+            throw new NotImplementedException();
         }
 
-        public IEnumerable<Cliente> GetAll()
+        public async Task<IEnumerable<Cliente>> GetAll()
         {
-            using(_context=new PhonesContext())
-            {
-                return _context.Clientes.ToList();
-            }
+            throw new NotImplementedException();
         }
 
-        public void Insert(Cliente entity)
+        public async Task Insert(Cliente entity)
         {
-            using(_context = new PhonesContext())
-            {
-                _context.Entry(entity).State = EntityState.Added;
-                _context.SaveChanges();
-            }
+            throw new NotImplementedException();
         }
 
-        public void Update(Cliente entity)
+        public async Task Update(Cliente entity)
         {
-            using (_context = new PhonesContext())
-            {
-                _context.Entry(entity).State = EntityState.Modified;
-                _context.SaveChanges();
-            }
+            throw new NotImplementedException();
         }
     }
 }
