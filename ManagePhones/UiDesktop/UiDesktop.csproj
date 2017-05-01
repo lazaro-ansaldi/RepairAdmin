@@ -147,6 +147,9 @@
     <EmbeddedResource Include="Panels\ManageModels.resx">
       <DependentUpon>ManageModels.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ManageOrders.resx">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

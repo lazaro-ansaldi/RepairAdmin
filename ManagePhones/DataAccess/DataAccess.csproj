@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201704200310352_20170420.Designer.cs">
       <DependentUpon>201704200310352_20170420.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705010223061_Order attributes.cs" />
+    <Compile Include="Migrations\201705010223061_Order attributes.Designer.cs">
+      <DependentUpon>201705010223061_Order attributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Context\PhonesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +68,7 @@
     <Compile Include="Repositories\Interfaces\IBaseRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ModelRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
     <Compile Include="Repositories\PhoneRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704200310352_20170420.resx">
       <DependentUpon>201704200310352_20170420.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705010223061_Order attributes.resx">
+      <DependentUpon>201705010223061_Order attributes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

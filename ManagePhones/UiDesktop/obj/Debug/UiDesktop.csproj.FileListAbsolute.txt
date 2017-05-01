@@ -29,3 +29,4 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.ABMModel.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.ManageClients.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.ABMWindows.ABMPhone.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\obj\Debug\UiDesktop.Panels.ManageOrders.resources

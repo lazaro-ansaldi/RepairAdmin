@@ -10,6 +10,8 @@ namespace Entities.Entidades
         public DateTime? FechaEgreso { get; set; }
         public DateTime FechaIngreso { get; set; }
         public int NroOrden { get; set; }
+        public Phone Phone { get; set; }
+        public Cliente Cliente { get; set; }
         #endregion
     }
 }

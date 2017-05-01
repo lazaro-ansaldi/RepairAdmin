@@ -35,5 +35,17 @@ namespace UiDesktop
             Main.Instancia.Panel.Controls[ManageClients.Instancia.Key].BringToFront();
             Main.Instancia.LinkBack.Visible = true;
         }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            if (!Main.Instancia.Panel.Controls.ContainsKey(ManageOrders.Instancia.Key))
+            {
+                ManageOrders.Instancia.Dock = DockStyle.Fill;
+                Main.Instancia.Panel.Controls.Add(ManageOrders.Instancia);
+            }
+            ManageOrders.Instancia.LoadData();
+            Main.Instancia.Panel.Controls[ManageOrders.Instancia.Key].BringToFront();
+            Main.Instancia.LinkBack.Visible = true;
+        }
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="Logic\LogicClient.cs" />
     <Compile Include="Logic\LogicMarca.cs" />
     <Compile Include="Logic\LogicModel.cs" />
+    <Compile Include="Logic\LogicOrders.cs" />
     <Compile Include="Logic\LogicPhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -53,6 +53,7 @@
             this.metroTile2.TabIndex = 1;
             this.metroTile2.Text = "Registrar nueva reparacion";
             this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // mtModelos
             // 
