@@ -16,3 +16,6 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.Migrations._20170420.resources
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.Migrations.Orderattributes.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\obj\Debug\DataAccess.Migrations.AddImportetoorder.resources
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\log4net.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\bin\Debug\log4net.xml

@@ -1,0 +1,12 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\ManagePhones.Util.dll.config
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\ManagePhones.Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\ManagePhones.Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\log4net.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\log4net.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\ManagePhones.Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\ManagePhones.Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Util\obj\Debug\ManagePhones.Util.csprojResolveAssemblyReference.cache

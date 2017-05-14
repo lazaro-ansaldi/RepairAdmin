@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DataAccess.Repositories.Interfaces
+namespace ManagePhones.DataAccess.Repositories.Interfaces
 {
     interface IBaseRepository<T>
     {

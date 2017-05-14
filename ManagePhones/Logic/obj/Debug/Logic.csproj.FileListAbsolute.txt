@@ -13,3 +13,5 @@ C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debu
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.xml
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\log4net.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\log4net.xml

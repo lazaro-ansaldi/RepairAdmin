@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Entities.Entidades;
 using UiDesktop.ABMWindows;
-using Util.Exceptions;
-using Logic.Logic;
+using ManagePhones.Logic.Logic;
+using ManagePhones.Util.Exceptions;
+using ManagePhones.Util.Enums;
+using ManagePhones.Entities.Entidades;
 
 namespace UiDesktop.Panels
 {
@@ -69,6 +70,7 @@ namespace UiDesktop.Panels
         {
             MapFromGrid();
             ABMModel abmWin = new ABMModel();
+            abmWin.Caller = CallerType.Panel;
             abmWin.MapToForm(currentModel);
             abmWin.Show();
         }
@@ -78,6 +80,7 @@ namespace UiDesktop.Panels
             currentModel = new Modelo();
             currentModel.Id = 0;
             ABMModel abmWin = new ABMModel();
+            abmWin.Caller = CallerType.Panel;
             abmWin.MapToForm(currentModel);
             abmWin.Show();
         }

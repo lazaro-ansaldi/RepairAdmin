@@ -1,8 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Entities.Entidades;
+using ManagePhones.Entities.Entidades;
 
-namespace DataAccess.Context
+namespace ManagePhones.DataAccess.Context
 {
     public class PhonesContext : DbContext
     {

@@ -1,15 +1,8 @@
-﻿using Entities.Entidades;
-using Logic.Logic;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using ManagePhones.Entities.Entidades;
+using ManagePhones.Logic.Logic;
+using ManagePhones.Util.Exceptions;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using Util.Exceptions;
+using UiDesktop.Generic.ABMWindows;
 
 namespace UiDesktop.ABMWindows
 {
@@ -66,6 +59,10 @@ namespace UiDesktop.ABMWindows
                 {
                     await logicPhone.AddNewPhone(MapFromForm());
                     base.ShowInfo("Telefono agregado correctamente.", "Modificar Modelo.");
+                }
+                if (Caller == ManagePhones.Util.Enums.CallerType.Panel)
+                {
+                    Panels.ManageDevices.Instancia.LoadData();
                 }
                 this.Close();
             }

@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Entities.Entidades;
-using DataAccess.Repositories.Interfaces;
-using DataAccess.Context;
 using System.Data.Entity;
+using ManagePhones.DataAccess.Repositories.Interfaces;
+using ManagePhones.DataAccess.Context;
+using ManagePhones.Entities.Entidades;
 
-namespace DataAccess.Repositories
+namespace ManagePhones.DataAccess.Repositories
 {
     public class OrderRepository : IBaseRepository<RepairOrder>
     {
@@ -18,9 +18,12 @@ namespace DataAccess.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<RepairOrder> FindOneById(int id)
+        public async Task<RepairOrder> FindOneById(int id)
         {
-            throw new NotImplementedException();
+            using (_context = new PhonesContext())
+            {
+                return await (from rp in _context.RepairOrders.Include(rp => rp.Cliente).Include(rp => rp.Phone.Modelo.Marca) where rp.Id == id select rp).SingleOrDefaultAsync();
+            }                      
         }
 
         public async Task<IEnumerable<RepairOrder>> GetAll()

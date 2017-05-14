@@ -1,0 +1,8 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\ManagePhones.Entities.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\ManagePhones.Entities.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\obj\Debug\ManagePhones.Entities.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Entities\obj\Debug\ManagePhones.Entities.pdb

@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logic.Logic;
-using Entities.Entidades;
-using Util.Exceptions;
+using ManagePhones.Logic.Logic;
+using ManagePhones.Util.Exceptions;
+using ManagePhones.Entities.Entidades;
 
 namespace UiDesktop.Panels
 {

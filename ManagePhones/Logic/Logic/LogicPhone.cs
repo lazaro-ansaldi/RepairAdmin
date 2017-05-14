@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Entities.Entidades;
-using DataAccess.Repositories;
+using ManagePhones.DataAccess.Repositories;
 using System.Data.SqlClient;
-using Util.Exceptions;
+using ManagePhones.Util.Exceptions;
+using ManagePhones.Entities.Entidades;
 
-namespace Logic.Logic
+namespace ManagePhones.Logic.Logic
 {
     public class LogicPhone
     {
@@ -41,6 +39,27 @@ namespace Logic.Logic
             try
             {
                 await _phoneRepository.Update(phone);
+            }
+            catch (SqlException sqlex)
+            {
+                throw new LoggedException();
+            }
+            catch (Exception ex)
+            {
+                throw new LoggedException();
+            }
+            finally
+            {
+                _phoneRepository = null;
+            }
+        }
+
+        public async Task<IEnumerable<Phone>> GetAll()
+        {
+            _phoneRepository = new PhoneRepository();
+            try
+            {
+                return await _phoneRepository.GetAll();
             }
             catch (SqlException sqlex)
             {

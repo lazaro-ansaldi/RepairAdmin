@@ -1,29 +1,34 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using log4net;
 
-namespace Util.Logger
+namespace ManagePhones.Util.Logger
 {
     public class AppLogger
     {
-        public AppLogger()
+        private static ILog _logger;
+
+        private static ILog Log
         {
-            _path = @"C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\UiDesktop\Error.log";
+            get
+            {
+                if (_logger == null)
+                {
+                    _logger = LogManager.GetLogger("root");
+                }
+                return _logger;
+            }
         }
 
-        private readonly string _path;
-        private StreamWriter _writer;
-
+        #region Public Methods
         public void LogError(string message)
         {
-            using (_writer = new StreamWriter(_path))
-            {
-                _writer.WriteLine(DateTime.Now.ToString("dd/MM/yyyy mm:hh:ss") + " -- " + message);
-            }
+            Log.Error(message);
         }
 
         public void LogFatal(string message)
         {
-            LogError(message);
+            Log.Fatal(message);
         }
+        #endregion
     }
 }

@@ -1,0 +1,8 @@
+01/05/2017 37:07:23 -- MESSAGE: No se puede implementar el método o la operación.
+ *-*-*-*-*- 
+STACK TRACE:    en DataAccess.Repositories.ClientRepository.<GetAll>d__3.MoveNext() en C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\DataAccess\Repositories\ClientRepository.cs:línea 28
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en Logic.Logic.LogicClient.<GetAll>d__3.MoveNext() en C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\Logic\LogicClient.cs:línea 54

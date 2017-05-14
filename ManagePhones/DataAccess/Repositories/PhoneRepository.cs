@@ -1,13 +1,12 @@
-﻿using DataAccess.Repositories.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Entities.Entidades;
-using DataAccess.Context;
 using System.Data.Entity;
+using ManagePhones.DataAccess.Repositories.Interfaces;
+using ManagePhones.DataAccess.Context;
+using ManagePhones.Entities.Entidades;
 
-namespace DataAccess.Repositories
+namespace ManagePhones.DataAccess.Repositories
 {
     public class PhoneRepository : IBaseRepository<Phone>
     {

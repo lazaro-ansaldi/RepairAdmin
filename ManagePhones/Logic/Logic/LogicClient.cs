@@ -1,12 +1,12 @@
-﻿using DataAccess.Repositories;
-using Entities.Entidades;
+﻿using ManagePhones.DataAccess.Repositories;
+using ManagePhones.Entities.Entidades;
+using ManagePhones.Util.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Util.Exceptions;
 
-namespace Logic.Logic
+namespace ManagePhones.Logic.Logic
 {
     public class LogicClient
     {
@@ -21,11 +21,11 @@ namespace Logic.Logic
             }
             catch(SqlException sqlex)
             {
-                throw new LoggedException("Error al actualizar la tabla de clientes.", "Error", sqlex);
+                throw new LoggedException("Error al actualizar la tabla de clientes.", Util.Enums.ExType.Error, sqlex);
             }
             catch(Exception ex)
             {
-                throw new LoggedException("Se produjo un error al intentar insertar el nuevo cliente.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error al intentar insertar el nuevo cliente.", Util.Enums.ExType.Fatal, ex);
             }
         }
 
@@ -38,11 +38,11 @@ namespace Logic.Logic
             }
             catch (SqlException sqlex)
             {
-                throw new LoggedException("Error al actualizar la tabla de clientes.", "Error", sqlex);
+                throw new LoggedException("Error al actualizar la tabla de clientes.", Util.Enums.ExType.Error, sqlex);
             }
             catch (Exception ex)
             {
-                throw new LoggedException("Se produjo un error al intentar modificar el cliente.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error al intentar modificar el cliente.", Util.Enums.ExType.Fatal, ex);
             }
         }
 
@@ -55,11 +55,11 @@ namespace Logic.Logic
             }
             catch (SqlException sqlex)
             {
-                throw new LoggedException("Error al consultar la tabla de clientes.", "Error", sqlex);
+                throw new LoggedException("Error al consultar la tabla de clientes.", Util.Enums.ExType.Error, sqlex);
             }
             catch (Exception ex)
             {
-                throw new LoggedException("Se produjo un error al intentar obtener los clientes.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error al intentar obtener los clientes.", Util.Enums.ExType.Fatal, ex);
             }
         }
     }

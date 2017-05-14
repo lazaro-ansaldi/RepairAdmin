@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using DataAccess.Repositories;
-using Entities.Entidades;
-using Util.Exceptions;
 using System;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using ManagePhones.DataAccess.Repositories;
+using ManagePhones.Util.Exceptions;
+using ManagePhones.Entities.Entidades;
 
-namespace Logic.Logic
+namespace ManagePhones.Logic.Logic
 {
     public class LogicMarca
     {
@@ -21,11 +21,11 @@ namespace Logic.Logic
             }
             catch(SqlException sqlex)
             {
-                throw new LoggedException("Error al intentar consultar la tabla de marcas.", "Error", sqlex);
+                throw new LoggedException("Error al intentar consultar la tabla de marcas.", Util.Enums.ExType.Error, sqlex);
             }
             catch(Exception ex)
             {
-                throw new LoggedException("Se produjo un error inesperado al intentar obtener las marcas.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error inesperado al intentar obtener las marcas.", Util.Enums.ExType.Fatal, ex);
             }
             finally
             {

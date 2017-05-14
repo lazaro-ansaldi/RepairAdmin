@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Entities.Entidades
+namespace ManagePhones.Entities.Entidades
 {
     public class Phone : Entity
     {

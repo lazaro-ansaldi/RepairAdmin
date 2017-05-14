@@ -1,5 +1,5 @@
 ﻿
-namespace Entities.Entidades
+namespace ManagePhones.Entities.Entidades
 {
     public class Modelo : Entity
     {

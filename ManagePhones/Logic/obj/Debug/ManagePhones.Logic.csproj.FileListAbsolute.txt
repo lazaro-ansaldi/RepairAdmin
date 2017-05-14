@@ -1,0 +1,17 @@
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\ManagePhones.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Logic.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Logic.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.DataAccess.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Util.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\log4net.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.DataAccess.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Util.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\EntityFramework.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\log4net.xml
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\ManagePhones.Logic.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\obj\Debug\ManagePhones.Logic.pdb
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Entities.dll
+C:\Users\Lazaro\Documents\GestionReparaciones\Source\ManagePhones\Logic\bin\Debug\ManagePhones.Entities.pdb

@@ -1,7 +1,8 @@
-﻿using System;
-using Util.Logger;
+﻿using ManagePhones.Util.Enums;
+using ManagePhones.Util.Logger;
+using System;
 
-namespace Util.Exceptions
+namespace ManagePhones.Util.Exceptions
 {
     public class LoggedException : Exception
     {
@@ -24,12 +25,11 @@ namespace Util.Exceptions
         }
         
 
-        public LoggedException(string message, string level, Exception ex) : base(message, ex)
+        public LoggedException(string message, ExType level, Exception ex) : base(message, ex)
         {
             _log = new AppLogger();
             _ex = ex;
-            ExType type = (ExType)Enum.Parse(typeof(ExType), level);
-            switch (type)
+            switch (level)
             {
                 case ExType.Error:
                     _log.LogError("MESSAGE: " + ex.Message + "\n *-*-*-*-*- \nSTACK TRACE: " + ex.StackTrace);
@@ -40,10 +40,5 @@ namespace Util.Exceptions
             }
         }
         #endregion
-        public enum ExType
-        {
-            Error,
-            Fatal
-        }
     }
 }

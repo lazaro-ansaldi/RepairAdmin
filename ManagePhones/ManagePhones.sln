@@ -5,13 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesktop", "UiDesktop\UIDesktop.csproj", "{7DF723E2-8B46-4BBD-8ACE-692B9ADF9891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{FFCBE89C-BE90-4852-9D35-7718621B0AC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePhones.Entities", "Entities\ManagePhones.Entities.csproj", "{FFCBE89C-BE90-4852-9D35-7718621B0AC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{AC5AD45E-CE6C-4C79-B299-64C89546570D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePhones.Logic", "Logic\ManagePhones.Logic.csproj", "{AC5AD45E-CE6C-4C79-B299-64C89546570D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{1352958B-661F-485C-81B9-BA211D82901A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePhones.Util", "Util\ManagePhones.Util.csproj", "{1352958B-661F-485C-81B9-BA211D82901A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{37026C2A-08CC-4099-907F-A24F1425DC84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePhones.DataAccess", "DataAccess\ManagePhones.DataAccess.csproj", "{37026C2A-08CC-4099-907F-A24F1425DC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Db Scripts", "Db Scripts", "{7FFB96D5-4896-4FF3-A424-017973508A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

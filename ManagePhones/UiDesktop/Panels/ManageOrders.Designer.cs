@@ -32,14 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridOrders = new MetroFramework.Controls.MetroGrid();
-            this.IdOrder = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroOrden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FecIngreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FecEgreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rbPendientes = new MetroFramework.Controls.MetroRadioButton();
             this.rbFinalizadas = new MetroFramework.Controls.MetroRadioButton();
+            this.btnPrint = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,11 +63,12 @@
             this.gridOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdOrder,
+            this.Id,
             this.NroOrden,
             this.Cliente,
             this.FecIngreso,
             this.FecEgreso,
+            this.Importe,
             this.Telefono});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -78,7 +81,7 @@
             this.gridOrders.EnableHeadersVisualStyles = false;
             this.gridOrders.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridOrders.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gridOrders.Location = new System.Drawing.Point(90, 63);
+            this.gridOrders.Location = new System.Drawing.Point(82, 63);
             this.gridOrders.Name = "gridOrders";
             this.gridOrders.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -91,15 +94,15 @@
             this.gridOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridOrders.Size = new System.Drawing.Size(582, 264);
+            this.gridOrders.Size = new System.Drawing.Size(590, 264);
             this.gridOrders.TabIndex = 3;
             // 
-            // IdOrder
+            // Id
             // 
-            this.IdOrder.HeaderText = "IdOrder";
-            this.IdOrder.Name = "IdOrder";
-            this.IdOrder.ReadOnly = true;
-            this.IdOrder.Visible = false;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
             // NroOrden
             // 
@@ -124,6 +127,12 @@
             this.FecEgreso.HeaderText = "Fecha Egreso";
             this.FecEgreso.Name = "FecEgreso";
             this.FecEgreso.ReadOnly = true;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
             // 
             // Telefono
             // 
@@ -151,10 +160,21 @@
             this.rbFinalizadas.Text = "Finalizadas";
             this.rbFinalizadas.UseSelectable = true;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(489, 6);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(115, 31);
+            this.btnPrint.TabIndex = 6;
+            this.btnPrint.Text = "Ver Reporte";
+            this.btnPrint.UseSelectable = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // ManageOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.rbFinalizadas);
             this.Controls.Add(this.rbPendientes);
             this.Controls.Add(this.gridOrders);
@@ -162,6 +182,7 @@
             this.Controls.SetChildIndex(this.gridOrders, 0);
             this.Controls.SetChildIndex(this.rbPendientes, 0);
             this.Controls.SetChildIndex(this.rbFinalizadas, 0);
+            this.Controls.SetChildIndex(this.btnPrint, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gridOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -171,13 +192,15 @@
         #endregion
 
         private MetroFramework.Controls.MetroGrid gridOrders;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdOrder;
+        private MetroFramework.Controls.MetroRadioButton rbPendientes;
+        private MetroFramework.Controls.MetroRadioButton rbFinalizadas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroOrden;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn FecIngreso;
         private System.Windows.Forms.DataGridViewTextBoxColumn FecEgreso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private MetroFramework.Controls.MetroRadioButton rbPendientes;
-        private MetroFramework.Controls.MetroRadioButton rbFinalizadas;
+        private MetroFramework.Controls.MetroButton btnPrint;
     }
 }

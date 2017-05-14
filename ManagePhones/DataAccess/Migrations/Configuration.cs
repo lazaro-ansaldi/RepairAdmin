@@ -1,4 +1,4 @@
-namespace DataAccess.Migrations
+namespace ManagePhones.DataAccess.Migrations
 {
     using System.Data.Entity.Migrations;
 

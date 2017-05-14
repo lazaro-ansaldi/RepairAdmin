@@ -1,13 +1,12 @@
-﻿using DataAccess.Context;
-using DataAccess.Repositories.Interfaces;
-using Entities.Entidades;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
 using System;
 using System.Threading.Tasks;
+using ManagePhones.DataAccess.Repositories.Interfaces;
+using ManagePhones.DataAccess.Context;
+using ManagePhones.Entities.Entidades;
 
-namespace DataAccess.Repositories
+namespace ManagePhones.DataAccess.Repositories
 {
     public class ClientRepository : IBaseRepository<Cliente>
     {
@@ -25,7 +24,10 @@ namespace DataAccess.Repositories
 
         public async Task<IEnumerable<Cliente>> GetAll()
         {
-            throw new NotImplementedException();
+            using (_context = new PhonesContext())
+            {
+                return await _context.Clientes.ToListAsync();
+            }
         }
 
         public async Task Insert(Cliente entity)

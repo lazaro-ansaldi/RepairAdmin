@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Entities.Entidades;
-using DataAccess.Repositories.Interfaces;
-using DataAccess.Context;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using ManagePhones.DataAccess.Context;
+using ManagePhones.DataAccess.Repositories.Interfaces;
+using ManagePhones.Entities.Entidades;
 
-namespace DataAccess.Repositories
+namespace ManagePhones.DataAccess.Repositories
 {
     public class MarcaRepository : IBaseRepository<Marca>
     {

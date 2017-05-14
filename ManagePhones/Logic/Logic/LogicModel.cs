@@ -1,12 +1,12 @@
-﻿using Entities.Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using DataAccess.Repositories;
+using ManagePhones.DataAccess.Repositories;
 using System.Data.SqlClient;
-using Util.Exceptions;
 using System.Threading.Tasks;
+using ManagePhones.Util.Exceptions;
+using ManagePhones.Entities.Entidades;
 
-namespace Logic.Logic
+namespace ManagePhones.Logic.Logic
 {
     public class LogicModel
     {
@@ -21,11 +21,11 @@ namespace Logic.Logic
             }
             catch(SqlException sqlex)
             {
-                throw new LoggedException("Error al consultar la tabla de modelos.", "Error", sqlex);
+                throw new LoggedException("Error al consultar la tabla de modelos.", Util.Enums.ExType.Error, sqlex);
             }
             catch(Exception ex)
             {
-                throw new LoggedException("Se produjo un error inesperado al intentar obtener los modelos.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error inesperado al intentar obtener los modelos.", Util.Enums.ExType.Fatal, ex);
             }
         }
 
@@ -38,11 +38,11 @@ namespace Logic.Logic
             }
             catch (SqlException sqlex)
             {
-                throw new LoggedException("Error al actualizar la tabla modelos.", "Error", sqlex);
+                throw new LoggedException("Error al actualizar la tabla modelos.", Util.Enums.ExType.Error, sqlex);
             }
             catch (Exception ex)
             {
-                throw new LoggedException("Se produjo un error inesperado al intentar añadir el modelo.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error inesperado al intentar añadir el modelo.", Util.Enums.ExType.Fatal, ex);
             }
         }
 
@@ -65,11 +65,11 @@ namespace Logic.Logic
             }
             catch (SqlException sqlex)
             {
-                throw new LoggedException("Error al actualizar la tabla modelos.", "Error", sqlex);
+                throw new LoggedException("Error al actualizar la tabla modelos.", Util.Enums.ExType.Error, sqlex);
             }
             catch (Exception ex)
             {
-                throw new LoggedException("Se produjo un error inesperado al intentar actualizar el modelo.", "Fatal", ex);
+                throw new LoggedException("Se produjo un error inesperado al intentar actualizar el modelo.", Util.Enums.ExType.Fatal, ex);
             }
         }
     }
